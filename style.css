@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom, lavender 100%, #090c31 0%);
+}
+.calculator {
+  width: 400px;
+  background-color: Khaki;
+  padding: 50px 30px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  box-shadow: 0 20px 50px Red;
+}
+
+.calculator:hover {
+  width: 400px;
+  background-color: seashell;
+  padding: 50px 30px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  box-shadow: 0 20px 50px Black;
+}
+
+
+.heading{
+font-size: 20px; 
+ 
+  border: yes;
+  background-color: blue;
+  color:black;
+  cursor: pointer;
+  border-radius: 5px;	
+}
+
+.heading:hover{
+	
+font-size: 20px;
+  background-color: white;
+  color:black;
+  cursor: pointer;
+  border-radius: 5px;
+	
+}
+.display {
+  width: 100%;
+}
+.display input {
+  width: 100%;
+  padding: 15px 10px;
+  text-align: right;
+  border: none;
+  background-color: grey;
+  color: aqua;
+  font-size: 35px;
+}
+.display input::placeholder {
+  color: black;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 40px;
+}
+.buttons input[type="button"] {
+  font-size: 20px;
+  padding: 17px;
+  border: none;
+  background-color:LightBlue ;
+  color:black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.buttons input[type="button"]:hover {
+  box-shadow: 0 8px 25px Lime;
+   background-color:white;
+  
+}
+
+.err{
+	visibility: hidden;
+}
+input[type="button"]#equal {
+  grid-row: span 2;
+  background-color: #f9544c;
+}
+input[type="button"][value="0"] {
+  grid-column: span 2;
+}
